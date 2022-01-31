@@ -1,0 +1,19 @@
+
+#myNavbar {
+    text-align: center;
+    font-size: 25px; /* find en passende størrelse*/
+}
+#page1{
+    display: block;
+}
+#page2{
+    display: none;
+}
+#page3{
+    display: none;
+}
+/*indsæt kode her*/
+
+#settings{
+    font-size: 28px; /* find en passende størrelse*/ 
+}
