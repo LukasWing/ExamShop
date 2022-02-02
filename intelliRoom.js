@@ -1,16 +1,11 @@
-/// Declaring global variables
-//var naturalLighting;
-//var lightColor;
-//var backgound;
-
 /**
  * Sets up canvas and anchors it to the html-element with id="room". This only happens once.
+ * variables initialised here without "var" are automatically global.
  */
 setup = function(){
     var canvas = createCanvas(300, 200);
     canvas.parent("room");
-    //setting global variables
-    naturalLighting = color(70, 70, 70);    
+    naturalLighting = color(70, 70, 70);
     lightColor = naturalLighting;
     backgoundColor = naturalLighting;
 }
@@ -21,12 +16,6 @@ draw = function(){
     background(backgoundColor);
     drawFloorPlan();
     drawLighting();
-}
-var set3 = function(){
-    a =3 ;
-}
-var p3 = function(){
-    console.log(a);
 }
 
 var drawFloorPlan = function() {
@@ -46,18 +35,8 @@ var drawLighting = function() {
 }
 
 /**
- * Function that turns on the light by setting global variables
+ * Turns on the light by changing global variable
  */
 var turnOnLights = function(){
-    lightColor = color(255,255,0);
+    lightColor = color(0,255,0);
 }
-
-/**
- * Function that turns off lighting by setting natural colors. 
- */
-var turnOfLights = function(){
-    lightColor = naturalLighting;
-}
-
-
-

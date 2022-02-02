@@ -13,53 +13,43 @@
 </head>
 
 <body>
+  <!-- Ændre titler -->
   <div class="container-fluid text-center bg-dark text-light">
     <h1 id="headline">Min Side</h1>
     <p>Undertitel</p>
   </div>
-  <div id="page1">
+  <div id="page1" class="container pb-5 mb-5">
     <!-- Ændre nedenstående kode -->
     <div class="container">
       <h2>Overskrift</h2>
       <img src="soap-bubble-1958650_1920.jpg" class="img-fluid">
       <p>Noget brødtekst</p>
     </div>
-    <p><br><br><br><br><br><br><br><br><br><br></p>
   </div>
 
 
-  <div id="page2">
+  <div id="page2" class="container pb-5 mb-5">
     <div class="container">
       <!-- Indskriv spørgsmål -->
       <!-- Lav fem knapper med retvisende farver -->
-      <!-- Vis brugeren feed-back fra alle knapperne -->      
+      <!-- Gentag ovenstående -->
     </div>
-    <p><br><br><br><br><br><br><br><br><br><br></p>
   </div>
 
-  <div id="page3">
-    <div class="container text-center" id='sketch-holder'>
-    <h1>IntelliHome</h1>
+  <div id="page3" class="container pb-5 mb-5">
+    <div class="container text-center" id='room'>
+      <h1>IntelliRoom</h1>
+    </div>
+    <div class="container">
+      <h3>Lysets tilstand:</h3>
+      <div class="btn btn-primary" onclick="turnOnLights()">Tænd</div>
+    </div>
   </div>
-  <div class="container">
-    <h3>Superheltens tilstand:</h3>
-    <div class="btn btn-secondary" onclick="soverPressed()">Sover</div>
-    <!-- Indsæt knapper til at styre bruger states. -->
-  </div>
-  <div class="container text-center" id='room'>
-    <h1>IntelliRoom</h1>
-  </div>
-  <div class="container">
-    <h3>Studentens tilstand:</h3>
-    <div class="btn btn-primary" onclick="turnOnLights()">Tænd</div>
-    <div class="btn btn-secondary" onclick="turnOfLights()">Sluk</div>
-  </div>
-  <p><br><br><br><br><br><br><br><br><br><br></p>
-  
-</div>
+
 
 <div id="myNavbar" class="container-fluid bg-dark text-white fixed-bottom p-4">
   <div class="row">
+    <!-- Ændre ikonerne -->
     <div onclick="showPage1()" class="col-4">
       <i class="fa fa-file"></i>
     </div>
@@ -72,7 +62,6 @@
   </div>
 </div>
 <script src="app.js"></script>
-<script src="intelliHome.js"></script>
 <script src="intelliRoom.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
