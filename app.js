@@ -39,7 +39,8 @@ var alertFeedBack = function () {
     message = ""
     alert(message)
 }
-
+showPage3();
 var btn = document.getElementById("headline");
 btn.addEventListener("click", alertFeedBack);
+// https://github.com/users/LukasWing/projects/1/settings/linked_repositories
 
